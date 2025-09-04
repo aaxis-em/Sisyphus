@@ -14,19 +14,20 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	{ import = "Aashish.plugins" },
 	{ import = "Aashish.plugins.lsp" },
-	--  {
-	--    dir = "~/lyrics.nvim",
-	--    name = "lyrics.nvim",
-	--    config = function()
-	--      require("init")
-	--    end,
-	--  }
 	{
-		"Aashish1-1-1/lyrics.nvim",
-		cmd = "Lyrics",
-		dependencies = { "nvim-lua/plenary.nvim" },
+		dir = "~/Desktop/workspace/lyrics.nvim",
+		name = "lyrics.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" }, -- Add dependencies if needed
 		config = function()
 			require("init")
 		end,
 	},
+	--{
+	--		"Aashish1-1-1/lyrics.nvim",
+	--		cmd = "Lyrics",
+	--		dependencies = { "nvim-lua/plenary.nvim" },
+	--		config = function()
+	--			require("init")
+	--		end,
+	--	},
 })

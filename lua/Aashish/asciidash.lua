@@ -36,8 +36,6 @@ local function custom_header()
 		"                                                                                          ",
 		"                                                                                          ",
 		"                                                                                          ",
-		"                                                                                          ",
-		"                                                                                          ",
 	}
 	for _, line in ipairs(header) do
 		print(line)

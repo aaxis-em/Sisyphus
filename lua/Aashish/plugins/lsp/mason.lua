@@ -9,27 +9,27 @@ return {
 			require("mason").setup()
 
 			require("mason-lspconfig").setup({
-				automatic_installation = true, -- Automatically install LSP servers
+				automatic_installation = true,
 				ensure_installed = {
-					"cssls", -- CSS LSP
-					"eslint", -- ESLint LSP
-					"html", -- HTML LSP
-					"jsonls", -- JSON LSP
-					"pyright", -- Python LSP
-					"tailwindcss", -- Tailwind CSS LSP
-					"gopls", --golang
-					["rust_analyzer"] = function() end,
+					"cssls",
+					"eslint",
+					"html",
+					"jsonls",
+					"pyright",
+					"tailwindcss",
+					"gopls",
+					"rust_analyzer",
 				},
 			})
 
 			require("mason-tool-installer").setup({
 				ensure_installed = {
-					"prettier", -- Code formatter for JS, HTML, CSS, etc.
-					"stylua", -- Lua formatter
-					"isort", -- Python import formatter
-					"black", -- Python code formatter
-					"pylint", -- Python linter
-					"eslint_d", -- ESLint daemon for linting JavaScript/TypeScript
+					"prettier",
+					"stylua",
+					"isort",
+					"black",
+					"pylint",
+					"eslint_d",
 				},
 			})
 		end,
