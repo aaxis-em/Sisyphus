@@ -1,0 +1,20 @@
+# Memory block
+[[block]]
+block = "memory"
+format = " $icon $mem_used_percents "
+format_alt = " $icon $swap_used_percents "
+
+# Focused window (sway window title)
+[[block]]
+block = "focused_window"
+max_width = 50
+
+# Custom launcher (notifications)
+[[block]]
+block = "notify"
+
+# Custom info block
+[[block]]
+block = "custom"
+command = "echo ' Info'"
+interval = "once"

@@ -10,7 +10,7 @@ require("Aashish.lazy")
 --Setting theme
 --Colorscheme	Description
 --vim.cmd("colorscheme default")
-vim.cmd("colorscheme aura-dark")
+vim.cmd("colorscheme tokyonight-night")
 --vim.cmd([[colorscheme solarized-osaka]])
 --Disabling swap file system
 vim.cmd(":set noswapfile")
